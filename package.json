@@ -1,0 +1,21 @@
+{
+  "name": "screeps",
+  "version": "1.0.0",
+  "description": "Screeps ES6 Library",
+  "main": "dist/main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "screeps-globals": "0.0.1",
+    "babel": "^5.8.21",
+    "grunt": "^0.4.5",
+    "grunt-babel": "^5.0.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-screeps": "^1.1.0",
+    "load-grunt-tasks": "^3.2.0"
+  },
+  "scripts": {
+    "build": "rm -r dist; mkdir -p dist; babel --watch --stage 0 ./src -d ./dist"
+  },
+  "author": "Will Garvey <zinin21@hotmail.com>",
+  "license": "MIT"
+}

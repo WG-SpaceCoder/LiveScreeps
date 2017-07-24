@@ -1,0 +1,5 @@
+.tern-project
+ScreepsAutocomplete
+screeps.js
+node_modules
+dist

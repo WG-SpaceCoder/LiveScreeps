@@ -1,13 +1,4 @@
-//Main Game Loop
-export function loop() {
-    garbageCollection(); //ALWAYS PERFORM THIS TASK TO PREVENT MEMORY LEAKS
-
-    if (!('bucket' in Game.cpu) || Game.cpu.bucket > 1000) {
-        //Game logic goes here
-    } else {
-        console.log('Game.spu.bucket:', Game.cpu.bucket);
-    }
-}
+//Useful things exist here...
 
 //Simply removes dead creeps from memory
 function garbageCollection() {
@@ -18,3 +9,10 @@ function garbageCollection() {
         }
     }
 }
+
+
+
+
+module.exports = {
+  garbageCollection: garbageCollection
+};
